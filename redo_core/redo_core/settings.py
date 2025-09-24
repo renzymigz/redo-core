@@ -55,7 +55,7 @@ ROOT_URLCONF = 'redo_core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates/redo'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
