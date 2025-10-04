@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="{% static 'dist/styles.css' %}">
+    <title>{% block title %}My amazing site{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+        <button class="px-4 py-2 font-bold text-white bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg">
+      My Gradient Button
+    </button>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li class = "underline text-5xl"><a href="/"><p class = "text-amber-200">Home</p></a></li>
+            <li><a href="/blog/" class ="text-amber-700">Blog</a></li>
+            
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

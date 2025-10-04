@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  },
+  "scripts": {
+    "watch:css": "npx @tailwindcss/cli -i ./redo_core/static/redo/css/styles.css -o ./redo_core/static/redo/dist/styles.css --watch"
+  }
+}
